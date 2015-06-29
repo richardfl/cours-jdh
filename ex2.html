@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ex2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script language="javascript" type="text/javascript">
+          tab_pays = new Array();
+          tab_pays[0]=["France",10];
+          tab_pays[1]=["UK",11];
+          tab_pays[2]=["USA",12];
+          tab_pays[3]=["Italie",13];
+          // console.log(tab_pays[0][0]);
+          // console.log(tab_pays.length);
+          
+          var i = new Number();
+          var affTab = new String();
+          affTab = "<table>";
+          for (i=0;i<tab_pays.length;i++){
+              // console.log(i);
+              if (i%2==0){
+                affTab += "<tr bgcolor=yellow>";
+              } else {
+                affTab += "<tr bgcolor=pink>";  
+              }
+              affTab += "<td>" + tab_pays[i][0].toString() + "</td>";
+              affTab += "<td>" + tab_pays[i][1].toString() + "</td>";
+              affTab += "</tr>";
+          }
+          affTab += "</table>";
+          // console.log(affTab);
+          document.write(affTab);
+        </script>
+    </body>
+</html>
