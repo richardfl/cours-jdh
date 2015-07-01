@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>testajax</title>
+        <style type="text/css" media="screen">
+            @import url("lib/style.css");
+        </style>
+        <script language="javascript" type="text/javascript" src="lib/requete.js">
+        </script>
+    </head>
+    <body>
+        <form name="f1" method="GET">
+            <input type="text" name="in1" value="toto"/>
+        </form>
+        <div class="voirtxt">
+        </div>
+        <script language="javascript" type="text/javascript">
+            document.getElementById("in1").onclick = function () {
+                var selObj = document.getElementById("in1");
+                var txtbalise = selObj.toString();
+                //txtbalise = document.getSelection("in1");
+                console.log("txtbalise = " + txtbalise);
+                document.getElementById("voirtxt").innerHTML(txtbalise);
+            }
+        </script>
+    </body>
+</html>

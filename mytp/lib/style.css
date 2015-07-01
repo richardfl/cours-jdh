@@ -93,6 +93,13 @@ h1  {
     overflow: auto;
 }
 
+#blockDroit table tr.pair {
+    background-color: yellow;
+}
+
+#blockDroit table tr.impair {
+    background-color: pink;
+}
 
 #pied  {
     width:100%;

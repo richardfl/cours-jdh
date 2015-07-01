@@ -47,6 +47,15 @@
                 document.write("sortie a la date du "+bd2.sortie.toLocaleString()+"</br>");
                 
                 document.getElementById('s1').onclick = bd1.stocker_afficher();
+                
+                stock1 = new stockBd();
+                stock1.ajouter("Lucky Luke -Ma Dalton","Morris/Goscinny","1971","c'est trop chouette",10,50);
+                stock1.ajouter("Lucky Luke -Les Dalton se rachetent","Morris/Goscinny","1975","c'est trop chouette",15,75);
+                stock1.ajouter("Lucky Luke -Les Dalton a la noce","Morris/Goscinny","1977","c'est trop chouette",12,90);
+                stock1.ajouter("Lucky Luke -Daisy towm","Morris/Goscinny","1978","c'est trop chouette",23,80);
+                stock1.destocker(0,2);
+                stock1.stocker(1,3);
+                document.write(stock1.toString());
             </script>
         </div>
         
